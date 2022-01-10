@@ -254,3 +254,9 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.cartLogic();
     });
 });
+
+const showNowBtn = document.querySelector(".banner-btn");
+const sectionProducts = document.querySelector(".products");
+showNowBtn.addEventListener("click", function () {
+  sectionProducts.scrollIntoView({ behavior: "smooth" });
+});
